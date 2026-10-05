@@ -1,0 +1,15 @@
+# Render Blueprint 部署配置（免费实例）
+# 部署后需要在 Render 后台设置环境变量：
+#   BOT_TOKEN   = 机器人 Token
+#   WEBHOOK_URL = https://<你的服务名>.onrender.com
+# （Token 不写在这个文件里，避免泄露）
+services:
+  - type: web
+    name: group-admin-bot
+    runtime: docker
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
