@@ -1,0 +1,10 @@
+name = "group-admin-bot"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+BOT_ID = "8432194219"
+
+[[kv_namespaces]]
+binding = "BOT_KV"
+id = "f45c6686d4194b88918d9337d5e8e778"
