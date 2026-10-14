@@ -1,0 +1,13 @@
+# 全能群管机器人 v2 部署配置（Cloudflare Workers）
+# 对应代码：本地 群管理机器人/cf-deploy/worker.js（未上传，含管理员/业务逻辑）
+# 部署命令：wrangler deploy（需先 secret put BOT_TOKEN 与 WEBHOOK_SECRET）
+name = "group-bot-v2"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+BOT_ID = "7661201430"
+
+[[kv_namespaces]]
+binding = "BOT_KV2"
+id = "3f9b8b8187ff4fa08e7b3d6f624e5792"
